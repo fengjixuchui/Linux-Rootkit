@@ -5,4 +5,4 @@ To remove the module, run "sudo rmmod rootkit.ko"
 
 This rootkit allows for processes to elevate their user privilege to root by calling setreuid with a specific input: setreuid(11111,11111). It does this by swapping the pointer to the original setreuid function in the syscall table with a pointer to my own function.
 
-An test file is included in the examples folder. This can be compiled using gcc setreuid_test.c
+A test file is included in the examples folder. This can be compiled using gcc setreuid_test.c
